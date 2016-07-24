@@ -2,10 +2,12 @@ package com.uber.yangz.flicks;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 /**
  * Created by yangz on 7/24/16.
  */
-public class Movie {
+public class Movie implements Serializable {
     private static String IMAGE_URI_PREFIX = "https://image.tmdb.org/t/p/w342";
 
     private String title;

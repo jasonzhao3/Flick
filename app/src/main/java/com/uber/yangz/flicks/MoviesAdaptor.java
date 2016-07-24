@@ -1,6 +1,7 @@
 package com.uber.yangz.flicks;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +26,7 @@ public class MoviesAdaptor extends ArrayAdapter<Movie> {
         TextView title;
         TextView overview;
         ImageView image;
+        Movie movie;
     }
 
     @Override
@@ -45,7 +47,29 @@ public class MoviesAdaptor extends ArrayAdapter<Movie> {
 
         viewHolder.title.setText(movie.getTitle());
         viewHolder.overview.setText(movie.getOverview());
+        setImage(viewHolder, movie);
+        viewHolder.movie = movie;
 
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ViewHolder viewHolder = (ViewHolder) view.getTag();
+                Movie movie = viewHolder.movie;
+                System.out.println(movie.getTitle());
+                launchMovieDetailView(movie);
+            }
+        });
+        return convertView;
+    }
+
+    public void launchMovieDetailView(Movie movie) {
+        Intent i = new Intent(getContext(), DetailActivity.class);
+        i.putExtra("movie", movie);
+        i.putExtra("code", 400);
+        getContext().startActivity(i);
+    }
+
+    private void setImage(ViewHolder viewHolder, Movie movie) {
         int orientation = getContext().getResources().getConfiguration().orientation;
         String imageUri = null;
         int width = 0, height = 0;
@@ -65,8 +89,6 @@ public class MoviesAdaptor extends ArrayAdapter<Movie> {
                 resize(width, height).
                 centerCrop().
                 into(viewHolder.image);
-
-        return convertView;
     }
 
 }
