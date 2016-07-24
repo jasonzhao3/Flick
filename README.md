@@ -14,5 +14,5 @@ Completed User stories:
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](http://imgur.com/a/sAz9k)
-![Video Walkthrough about landscape view](http://imgur.com/a/GVKXr)
+<img src='http://imgur.com/a/sAz9k' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://imgur.com/a/GVKXr' title='Video Walkthrough(landscape)' width='' alt='Video Walkthrough(landscape)' />
