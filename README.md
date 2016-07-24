@@ -10,9 +10,13 @@ Completed User stories:
  * [x] Required: Views should be responsive for both landscape/portrait mode.
  * [x] Optional: Add pull-to-refresh to load the next page of movies
  * [x] Optional: Display a nice default popcorn placeholder for each image during loading
- * [x] Optional:Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity
+ * [x] Optional: Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity
+ * [x] Optional: Add a rounded corners for the images using the Picasso transformations.
 
 Walkthrough of all user stories:
 
+Portrait Mode:
 <img src='http://i.imgur.com/xk1Wbqj.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Landscape Mode:
 <img src='http://i.imgur.com/xR93PBe.gif' title='Video Walkthrough(landscape)' width='' alt='Video Walkthrough(landscape)' />
