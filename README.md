@@ -14,4 +14,5 @@ Completed User stories:
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](anim_rotten_tomatoes.gif)
+![Video Walkthrough](http://imgur.com/a/sAz9k)
+![Video Walkthrough about landscape view](http://imgur.com/a/GVKXr)
